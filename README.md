@@ -31,19 +31,14 @@ npm install
 # ou
 yarn install
 
-## ▶️ Rodando o Projeto
+▶️ Rodando o Projeto
 
 ```bash
 npm run dev
 
 ---
 
-#### 2. ❌ **Bloco "Scripts Disponíveis" não está formatado como lista ou código**
-As instruções estão misturadas com texto corrido, o que compromete a legibilidade.
-
-#### ✅ Correção:
-```markdown
-## 🧪 Scripts Disponíveis
+🧪 Scripts Disponíveis
 
 ```bash
 npm run dev     # Inicia o servidor de desenvolvimento
@@ -66,7 +61,7 @@ npm run lint    # Executa o linter para verificar erros de estilo e sintaxe
 
 ---
 
-## 📌 Pré-requisitos
+📌 Pré-requisitos
 
 - Node.js `>=18`
 - npm ou yarn instalado
