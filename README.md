@@ -2,8 +2,6 @@
 
 Um catálogo interativo de países, desenvolvido com **Next.js**, **TypeScript** e **Chakra UI**, que consome a REST Countries API para exibir informações detalhadas sobre as nações do mundo.
 
-![Preview](https://via.placeholder.com/800x400?text=Preview+da+aplica%C3%A7%C3%A3o)
-
 ---
 
 ## 🚀 Tecnologias Utilizadas
