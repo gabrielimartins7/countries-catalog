@@ -1,0 +1,147 @@
+.pageWrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #F68926, #ffd061);
+}
+
+.container {
+  flex: 1;
+  padding: 2rem 4rem;
+  position: relative;
+}
+
+.logoWrapper {
+  position: absolute;
+  top: 2rem;
+  left: 1rem;
+  z-index: 10;
+}
+
+.filters {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  width: 100%;
+  justify-items: center;
+  padding: 0;
+  margin-top: 1rem;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.pageButton {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.pageButton:hover {
+  background-color: white;
+  color: #111;
+}
+
+.activePageButton {
+  background-color: white;
+  color: #111;
+  font-weight: bold;
+  border: 2px solid white;
+}
+
+.arrow {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.arrow:hover {
+  background-color: white;
+  color: #111;
+}
+
+.arrow:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  height: 130px;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  left: 0;
+  right: 0;
+}
+
+.footerLogo {
+  width: 100px;
+  height: auto;
+  object-fit: contain;
+}
+
+.footerText {
+  font-size: 14px;
+  font-weight: 400;
+  text-align: right;
+  margin: 0;
+  padding-right: 20px;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    height: auto;
+    padding: 20px 1rem;
+  }
+  
+  .footerText {
+    text-align: center;
+    padding-right: 0;
+  }
+}

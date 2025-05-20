@@ -1,0 +1,22 @@
+.input {
+  width: 420px;
+  height: 50px;
+  padding: 0 3rem 0 1rem;
+  border: 1px solid #fff;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-family: var(--font-inter);
+  background-color: #F68926;
+  box-sizing: border-box;
+  line-height: 1.2;
+  color: #fff;
+
+  background-image: url('data:image/svg+xml;utf8,<svg fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.53 20.47l-5.2-5.2A7.92 7.92 0 0018 10a8 8 0 10-8 8 7.92 7.92 0 005.27-1.67l5.2 5.2a.75.75 0 001.06-1.06zM4 10a6 6 0 1112 0 6 6 0 01-12 0z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  background-size: 20px 20px;
+}
+
+.input::placeholder {
+  color: #fff;
+}

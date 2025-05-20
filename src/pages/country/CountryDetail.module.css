@@ -1,0 +1,150 @@
+/* Container */
+.container {
+  max-width: 960px;        /* do primeiro */
+  margin: 0 auto;          /* do primeiro */
+  padding: 2rem 1.5rem;    /* do primeiro */
+  
+  /* do segundo */
+  font-family: 'Inter', sans-serif;
+  color: #333;
+}
+
+/* Back Link */
+.backLink {
+  font-size: 0.95rem;          /* do primeiro */
+  color: var(--color-primary); /* do primeiro */
+  text-decoration: none;       /* do primeiro */
+  margin-bottom: 2rem;         /* do primeiro */
+  display: inline-block;       /* ambos */
+
+  /* do segundo */
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.backLink:hover {
+  color: #ea580c; /* do segundo */
+}
+
+/* Card */
+.card {
+  display: flex;            /* ambos */
+  flex-direction: row;      /* do primeiro */
+  gap: 2rem;                /* do primeiro */
+  background-color: #fff;   /* do primeiro */
+  padding: 2rem;            /* do primeiro */
+  border-radius: 12px;      /* do primeiro */
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05); /* do primeiro */
+  border: 1px solid var(--color-border);       /* do primeiro */
+  
+  /* do segundo */
+  overflow: hidden;
+  box-sizing: border-box;
+  flex-direction: column;  /* do segundo (conflito com flex-direction: row) */
+  border-radius: 25px;     /* do segundo (conflito com 12px) */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* do segundo */
+  padding: 0;              /* do segundo */
+}
+
+/* Region Image */
+.regionImage {
+  width: 100%;
+  height: 47px;
+  object-fit: cover;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+/* Content */
+.content {
+  padding: 20px 24px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  text-align: center;
+}
+
+/* Flag Wrapper */
+.flagWrapper {
+  flex: 1;                  /* do primeiro */
+  max-width: 300px;         /* do primeiro */
+  display: flex;            /* do primeiro */
+  align-items: center;      /* do primeiro */
+  justify-content: center;  /* do primeiro */
+  background-color: #f9f9f9;/* do primeiro */
+  border-radius: 8px;       /* do primeiro */
+  overflow: hidden;         /* ambos */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15); /* do segundo */
+  width: 72px;              /* do segundo */
+  height: 54px;             /* do segundo */
+}
+
+/* Flag Wrapper Image */
+.flagWrapper img {
+  width: 100%;
+  height: auto;
+  object-fit: contain; /* do primeiro */
+}
+
+/* Flag */
+.flag {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* Info */
+.info {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: center; /* do media query do primeiro */
+}
+
+/* Name / Title */
+.name, 
+.info h1 {
+  font-size: 1.75rem; /* do primeiro */
+  font-weight: 700;
+  margin: 0 0 1rem; /* do primeiro */
+  color: #333;
+}
+
+.name {
+  font-size: 26px; /* do segundo */
+  margin: 0;
+}
+
+.content p {
+  font-size: 16px;
+  color: #555;
+  margin: 4px 0;
+  line-height: 1.4;
+}
+
+.content p strong {
+  color: #333;
+  font-weight: 600;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .card {
+    flex-direction: column; /* do primeiro */
+    align-items: center;
+    text-align: center;
+  }
+
+  .info {
+    align-items: center;
+  }
+
+  .info h1 {
+    font-size: 1.5rem;
+  }
+}

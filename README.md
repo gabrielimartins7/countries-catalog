@@ -1,36 +1,79 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌍 Countries Catalog
 
-## Getting Started
+Um catálogo interativo de países, desenvolvido com **Next.js**, **TypeScript** e **Chakra UI**, que consome a REST Countries API para exibir informações detalhadas sobre as nações do mundo.
 
-First, run the development server:
+![Preview](https://via.placeholder.com/800x400?text=Preview+da+aplica%C3%A7%C3%A3o)
+
+---
+
+## 🚀 Tecnologias Utilizadas
+
+- [Next.js](https://nextjs.org/) – Framework React com renderização SSR e SSG  
+- [React](https://react.dev/) – Biblioteca JavaScript para construção de interfaces  
+- [TypeScript](https://www.typescriptlang.org/) – Tipagem estática para JavaScript  
+- [Chakra UI](https://chakra-ui.com/) – Biblioteca de componentes estilizados  
+- [Framer Motion](https://www.framer.com/motion/) – Animações suaves e intuitivas  
+- [React Select](https://react-select.com/home) – Dropdowns com pesquisa  
+- [React Icons](https://react-icons.github.io/react-icons/) – Ícones SVG  
+- [ESLint](https://eslint.org/) – Linter para garantir qualidade do código  
+
+---
+
+## 📦 Instalação
+
+```bash
+# Clone o repositório
+git clone https://github.com/gabrielimartins7/countries-catalog
+
+# Acesse o diretório
+cd countries-catalog
+
+# Instale as dependências
+npm install
+# ou
+yarn install
+
+## ▶️ Rodando o Projeto
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+#### 2. ❌ **Bloco "Scripts Disponíveis" não está formatado como lista ou código**
+As instruções estão misturadas com texto corrido, o que compromete a legibilidade.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+#### ✅ Correção:
+```markdown
+## 🧪 Scripts Disponíveis
 
-## Learn More
+```bash
+npm run dev     # Inicia o servidor de desenvolvimento
+npm run build   # Cria a versão de produção do app
+npm run start   # Inicia o app em produção
+npm run lint    # Executa o linter para verificar erros de estilo e sintaxe
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+✨ Funcionalidades
+🔎 Filtro de países por nome, região ou capital
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+📍 Visualização de informações como bandeira, capital e região
 
-## Deploy on Vercel
+🌐 Ícones regionais dinâmicos por continente
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+💡 Animações suaves com Framer Motion
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+📱 Layout responsivo e acessível
+
+---
+
+## 📌 Pré-requisitos
+
+- Node.js `>=18`
+- npm ou yarn instalado
+
+---
+
+🙋‍♀️ Autora
+Feito com 💜 por Gabrieli Martins
